@@ -1,0 +1,197 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"104 D:\PC\PIC\SumoBot\Sumobot.X\Sumobot.c
+[e E726 Direccion `uc
+DIRECCION_NINGUNA 0
+DIRECCION_ADELANTE 1
+DIRECCION_DERECHA 2
+DIRECCION_IZQUIERDA 3
+]
+"48 D:\PC\PIC\SumoBot\Sumobot.X\user.c
+[e E726 Direccion `uc
+DIRECCION_NINGUNA 0
+DIRECCION_ADELANTE 1
+DIRECCION_DERECHA 2
+DIRECCION_IZQUIERDA 3
+]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"4 D:\PC\PIC\SumoBot\Sumobot.X\interruption.c
+[v _color color `II(v  1 e 1 0 ]
+"27 D:\PC\PIC\SumoBot\Sumobot.X\Sumobot.c
+[v _main main `(i  1 e 2 0 ]
+"7 D:\PC\PIC\SumoBot\Sumobot.X\user.c
+[v _delayMs delayMs `(v  1 e 1 0 ]
+[v i1_delayMs delayMs `(v  1 e 1 0 ]
+"18
+[v _delay_us delay_us `T(v  1 e 1 0 ]
+"24
+[v _detectarOponente detectarOponente `(c  1 e 1 0 ]
+"160 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic16f628a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S159 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"177
+[u S168 . 1 `S159 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES168  1 e 1 @5 ]
+[s S134 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"238
+[u S143 . 1 `S134 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES143  1 e 1 @6 ]
+[s S25 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"324
+[s S34 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S39 . 1 `S25 1 . 1 0 `S34 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES39  1 e 1 @11 ]
+"434
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+[s S57 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+]
+"471
+[s S63 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[u S67 . 1 `S57 1 . 1 0 `S63 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES67  1 e 1 @16 ]
+[s S82 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"537
+[s S86 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S94 . 1 `S82 1 . 1 0 `S86 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES94  1 e 1 @18 ]
+"592
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+[s S110 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 CCP1Y 1 0 :1:4 
+`uc 1 CCP1X 1 0 :1:5 
+]
+"622
+[s S114 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+]
+[u S119 . 1 `S110 1 . 1 0 `S114 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES119  1 e 1 @23 ]
+"743
+[v _CMCON CMCON `VEuc  1 e 1 @31 ]
+"812
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"881
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"942
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1003
+[v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
+"1107
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"14 D:\PC\PIC\SumoBot\Sumobot.X\user.h
+[v _DISTANCIA_EN_S DISTANCIA_EN_S `DCCl  1 e 4 0 ]
+"27 D:\PC\PIC\SumoBot\Sumobot.X\Sumobot.c
+[v _main main `(i  1 e 2 0 ]
+{
+"103
+[v main@direccion direccion `c  1 a 1 38 ]
+"84
+[v main@i i `l  1 a 4 39 ]
+"141
+} 0
+"24 D:\PC\PIC\SumoBot\Sumobot.X\user.c
+[v _detectarOponente detectarOponente `(c  1 e 1 0 ]
+{
+"50
+} 0
+"18
+[v _delay_us delay_us `T(v  1 e 1 0 ]
+{
+[v delay_us@us us `l  1 p 4 15 ]
+"22
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 11 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 10 ]
+[v ___aldiv@counter counter `uc  1 a 1 9 ]
+"6
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"42
+} 0
+"7 D:\PC\PIC\SumoBot\Sumobot.X\user.c
+[v _delayMs delayMs `(v  1 e 1 0 ]
+{
+"9
+[v delayMs@i i `l  1 a 4 4 ]
+"7
+[v delayMs@ms ms `l  1 p 4 0 ]
+"16
+} 0
+"4 D:\PC\PIC\SumoBot\Sumobot.X\interruption.c
+[v _color color `II(v  1 e 1 0 ]
+{
+"8
+[v color@timerPrendido timerPrendido `c  1 a 1 12 ]
+"21
+} 0
+"7 D:\PC\PIC\SumoBot\Sumobot.X\user.c
+[v i1_delayMs delayMs `(v  1 e 1 0 ]
+{
+[v i1delayMs@i delayMs `l  1 a 4 4 ]
+[v i1delayMs@ms ms `l  1 p 4 0 ]
+"16
+} 0
